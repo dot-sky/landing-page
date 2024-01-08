@@ -114,7 +114,32 @@ body{
     text-align: end;
     margin-top: 24px;
     margin-right: 24px;
-
+}
+.action-wrapper{
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    max-width: 1100px;
+    min-height: 150px;
+    border-radius: 12px;
+    padding: 24px 12px;
+    box-sizing: border-box;
+    background-color: #3882f6;
+    color: #e5e7eb;
+}
+.header-action{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #f9faf8;
 }
 ul{
     list-style: none;
@@ -146,4 +171,8 @@ a{
     text-align: center;
     background-color: #3882f6;
     font-weight: bold;
+    color: #f9faf8;
+}
+.action .blue-button{
+    border: 2px solid #f9faf8;
 }
