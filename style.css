@@ -26,6 +26,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 24px 12px;
+    gap: 12px;
 }
 
 .header-content{
@@ -36,7 +37,7 @@ body{
     padding: 12px;
 }
 .container{
-    height: 250px;
+    min-height: 250px;
     width: 500px;
     display: flex;
     flex-direction: column;
