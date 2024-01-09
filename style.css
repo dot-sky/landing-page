@@ -1,46 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
 body{
-    font-family: Roboto, Helvetica, sans-serif;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 .header-wrapper,
 .footer{
     background-color: #1f2937;
     color: #e5e7eb;
 }
-.header-wrapper{
-    min-height: 650px;
-}
 .header{
-    min-height: 650px;
-    max-width: 1100px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-height: 650px;
 }
-
-.nav-bar{
-    display: flex;
+.nav-bar.vertical-center{
     justify-content: space-between;
-    align-items: center;
-    padding: 24px 12px;
     gap: 12px;
 }
-
-.header-content{
-    display: flex;
-    align-items: center;
+.header-content.vertical-center{
     flex: 1;
     gap: 60px;
-    padding: 12px;
+}
+.padded-content{
+    padding: 24px;
 }
 .container{
-    min-height: 250px;
-    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 500px;
+    min-height: 250px;
 }
 .image{
     width: 600px;
@@ -52,55 +44,46 @@ body{
     font-weight: 900;
     color: #f9faf8;
 }
-
 .info,
 .quote{
-    max-width: 800px;
     margin: 0 auto;
+    max-width: 800px;
 }
 .info{
-    text-align: center;
     min-height: 450px;
+    text-align: center;
+}
+.blue-title{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 .card-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
-    padding: 12px;
 }
 .card{
-    width: 160px;
     margin: 6px 0px;
+    width: 160px;
+    font-size: 18px;
+    color: #1f2937;
 }
 .box{
+    box-sizing: border-box;
+    margin-bottom: 12px;
     border: 4px solid #3882f6;
     border-radius: 12px;
     width: 160px;
     height: 160px;
-    box-sizing: border-box;
-    margin-bottom: 12px;
-}
-.blue-title{
-    font-size: 36px;
-    font-weight: 900;
-    color: #1f2937;
-    padding: 32px 12px;
-}
-.card{
-    font-size: 18px;
-    color: #1f2937;
 }
 .quote-wrapper{
     background-color: #e5e7eb;
     color: #1f2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 450px;
 }
 .quote{
-    padding: 12px;
     box-sizing: border-box;
 }
 .quote-text{
@@ -109,29 +92,27 @@ body{
     font-style: italic;
 }
 .quote-author{
+    margin-top: 24px;
+    margin-right: 24px;
     font-size: 20px;
     font-weight: bolder;
     text-align: end;
-    margin-top: 24px;
-    margin-right: 24px;
 }
 .action-wrapper{
     min-height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .action{
+    box-sizing: border-box;
     flex: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 12px;
+    margin: 24px;
+    border-radius: 12px;
+    padding: 24px;
     max-width: 1100px;
     min-height: 150px;
-    border-radius: 12px;
-    padding: 24px 12px;
-    box-sizing: border-box;
     background-color: #3882f6;
     color: #e5e7eb;
 }
@@ -141,23 +122,47 @@ body{
     margin-bottom: 6px;
     color: #f9faf8;
 }
-.footer{
-    min-height: 80px;
+.vertical-center, .center{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 24px;
+.center{
+    justify-content: center;
+}
+.footer{
+    box-sizing: border-box;
+    min-height: 80px;
+    padding: 12px 24px;
 }
 .logo{
     font-size: 24px;
     font-weight: 600;
     color: #f9faf8;
+}
+.secondary-text{
+    margin: 12px 0px;
+}
+.blue-button{
+    border-radius: 8px;
+    padding: 6px;
+    width: 120px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    text-align: center;
+}
+.action .blue-button{
+    border: 2px solid #f9faf8;
+}
+ul{
+    display: flex;
+    gap: 12px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+li a{
+    padding: 12px 6px;
 }
 a{
     text-decoration: none;
@@ -166,19 +171,4 @@ a{
 a{
     font-size: 18px;
     color: #e5e7eb;
-}
-.secondary-text{
-    margin: 12px 0px;
-}
-.blue-button{
-    width: 120px;
-    padding: 6px;
-    border-radius: 8px;
-    text-align: center;
-    background-color: #3882f6;
-    font-weight: bold;
-    color: #f9faf8;
-}
-.action .blue-button{
-    border: 2px solid #f9faf8;
 }
